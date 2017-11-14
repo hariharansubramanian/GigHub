@@ -199,9 +199,24 @@
     <Compile Include="Migrations\201711131032366_InitialModel.Designer.cs">
       <DependentUpon>201711131032366_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711131051180_CreateGigTable.cs" />
+    <Compile Include="Migrations\201711131051180_CreateGigTable.Designer.cs">
+      <DependentUpon>201711131051180_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711140537268_OverrideConventionsForGigAndGenre.cs" />
+    <Compile Include="Migrations\201711140537268_OverrideConventionsForGigAndGenre.Designer.cs">
+      <DependentUpon>201711140537268_OverrideConventionsForGigAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711140600476_PopulateGenreTable.cs" />
+    <Compile Include="Migrations\201711140600476_PopulateGenreTable.Designer.cs">
+      <DependentUpon>201711140600476_PopulateGenreTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -283,6 +298,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711131032366_InitialModel.resx">
       <DependentUpon>201711131032366_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711131051180_CreateGigTable.resx">
+      <DependentUpon>201711131051180_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711140537268_OverrideConventionsForGigAndGenre.resx">
+      <DependentUpon>201711140537268_OverrideConventionsForGigAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711140600476_PopulateGenreTable.resx">
+      <DependentUpon>201711140600476_PopulateGenreTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
