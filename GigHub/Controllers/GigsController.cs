@@ -7,14 +7,13 @@ namespace GigHub.Controllers
 {
     public class GigsController : Controller
     {
-        private ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
 
         public GigsController()
         {
             _dbContext = new ApplicationDbContext();
         }
 
-        // GET: Gigs
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel
