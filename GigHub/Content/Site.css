@@ -35,6 +35,41 @@ body { font-size: 17px; }
 
 .navbar-inverse .navbar-brand { color: #fff; }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(205,40,39,0.55);
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar .nav > li > .dropdown-menu::before {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #CCC;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+.navbar .nav > li > .dropdown-menu::after {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    content: '';
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
 body,
 h1,
 h2,

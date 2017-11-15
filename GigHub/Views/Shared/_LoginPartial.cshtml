@@ -6,27 +6,21 @@
         @Html.AntiForgeryToken()
 
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new {title = "Manage"})
-            </li>
-
-            <li>
-                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
-            </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                    @User.Identity.GetUserName()
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                        <a href="#">Action</a>
+                        <a href="#">Gigs I'm Going</a>
                     </li>
                     <li>
-                        <a href="#">Another action</a>
+                        <a href="#">Artists I'm Following</a>
                     </li>
                     <li role="separator" class="divider"></li>
+
                     <li>
-                        <a href="#">Something else here</a>
+                        <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
                     </li>
                 </ul>
             </li>
