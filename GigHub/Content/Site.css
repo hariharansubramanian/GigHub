@@ -4,6 +4,7 @@
 }
 
 /* Set padding to keep content from hitting the edges */
+
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -12,13 +13,61 @@
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
-    white-space: normal;
-}
+
+.dl-horizontal dt { white-space: normal; }
 
 /* Set width on the form input elements since they're 100% wide by default */
+
 input,
 select,
-textarea {
-    max-width: 280px;
+textarea { max-width: 280px; }
+
+/*CUSTOM CSS OVERRIDES*/
+
+.navbar-inverse {
+    background-color: #FF4342;
+    border-color: #FF4342;
+}
+
+body { font-size: 17px; }
+
+.navbar-inverse .navbar-nav > li > a { color: #fff; }
+
+.navbar-inverse .navbar-brand { color: #fff; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 { font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.form-group { margin-bottom: 20px; }
+
+.form-control {
+    font-size: 17px;
+    padding: 20px 15px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.form-control:focus {
+    border-color: #2196F3;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.btn {
+
+    padding: 7px 20px;
+    font-size: 17px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
 }
