@@ -21,7 +21,12 @@
 input,
 select,
 textarea { max-width: 280px; }
-
+span.field-validation-error {
+    color: red;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: "Open Sans";
+}
 /*CUSTOM CSS OVERRIDES*/
 
 .navbar-inverse {
@@ -106,3 +111,4 @@ h6,
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+
