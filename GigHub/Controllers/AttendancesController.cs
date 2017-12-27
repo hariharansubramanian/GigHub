@@ -18,7 +18,7 @@ namespace GigHub.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult Attend(AttendanceDTO dto)
+        public IHttpActionResult Attend(AttendanceDto dto)
         {
 
             var userId = User.Identity.GetUserId();
